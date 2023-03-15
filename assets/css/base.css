@@ -1,8 +1,11 @@
 @charset "UTF-8";
 @import url('theme.css');
 @font-face {
-  font-family: '王漢宗特明體一標準';
-  src: url('/assets/fonts/王漢宗特明體/王漢宗特明體一標準.ttf');
+  /* font-family: '王漢宗特明體一標準'; */
+  font-family: '王漢宗特明體';
+  src: url('../fonts/王漢宗特明體/WCL-02.woff2');
+  src: url('../fonts/王漢宗特明體/WCL-02.ttf');
+  src: url('../fonts/王漢宗特明體/WCL-02.eot');
 }
 
 /*
