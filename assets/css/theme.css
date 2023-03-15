@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+    /* font-family: '王漢宗特明體一標準'; */
+    font-family: '王漢宗特明體';
+    src: url('../fonts/王漢宗特明體/WCL-02.woff2'),
+         url('../fonts/王漢宗特明體/WCL-02.ttf'),
+         url('../fonts/王漢宗特明體/WCL-02.eot');
+  }
 /*      
  * Theme
  * Copyright 2022-2023
