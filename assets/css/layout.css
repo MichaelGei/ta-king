@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*      
+ * Layout
+ * Copyright 2022-2023
+ * Copyright TAKING CONSTRUCTION竹慶建設
+ * Licenced Under MIT
+ * /
+ 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ------------------------------ *\
+    Content
+\* ------------------------------ */
+/**
+ * Content .............. You are reading it! 
+ * Wrapper .............. 
+ * /
+
+/* ------------------------------ *\
+    Layout               
+/* Grid system */
+
+/* Wrapper */
+.wrapper{
+    position: relative;
+    height: 100%;
+}
+
+/* container */
+.container{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    max-width: 1440px;
+}
+.footer .container{
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 575.98px) {
+    .container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* row */
+.project-finished .row, .projects-presale .row{
+    justify-content: center;
+}
+.blog-list .row{
+    margin-bottom: 0;
+}
+.row{
+    margin-bottom: 5rem;
+    row-gap: 3rem;
+}
+.row.card-list{
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.view.row.row--row-reverse:nth-child(even){
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+.projects-finished-list .row{
+    margin: 0;
+}
+.footer .row{
+    /* margin-bottom: 2rem; */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 2rem;
+}
+@media screen and (max-width: 991.98px) {
+    .row{
+        margin-bottom: 6rem;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .row{
+        margin-bottom: 4rem;
+        row-gap: 2rem;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .row{
+        margin-bottom: 3rem;
+    }
+}
+.row:last-child{
+    margin-bottom: 0;
+}
+
+.row>* {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*      
+ * Theme
+ * Copyright 2022-2023
+ * Copyright TAKING CONSTRUCTION竹慶建設
+ * Licenced Under MIT
+ * /
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ------------------------------ *\
+    Content
+\* ------------------------------ */
+/**
+ * Content .............. You are reading it!
+ * Variables .............. Set Var()
+ * * * colour
+ * * * typography
+
+ * Light Theme .............. Set Light Theme (projects-presale.html)
+ * /
+
+ /* ------------------------------ *\
+    Variables
+\* ------------------------------ */
+
+:root{
+
+    /* colour */
+    --white: #fff;
+    --dark: #122620;
+    --dark-80: rgba(18, 38, 32, .8);
+    --gold: #d6ad60;
+    --gold-75: rgba(214, 173, 96, 0.75);
+    --gold-60: rgba(214, 173, 96, 0.6);
+    --tan-gold: #b68d40;
+
+    --beige: #fff2d9;
+
+    --tan: #8e7161;
+    
+    --brown: #964b00;
+
+    --dark-brown: #3c3a3b;
+    --black: #000;
+    --grey: #a3a3a3;
+    --dark-grey: #343c3f;
+    --dark-grey-80: rgba(52, 60, 63, .8);
+    --dark-grey-50: rgba(52, 60, 63, .5);
+    --dark-grey-40: rgba(52, 60, 63, .4);
+    --dark-grey-20: rgba(52, 60, 63, .2);
+    --dark-grey-15: rgba(52, 60, 63, .15);
+    --dark-grey-10: rgba(52, 60, 63, .1);
+    --light-grey: #e0e0e0;
+
+    --light-blue: #89cff0;
+
+    /* typography */
+
+
+    /* font-family */
+    --ff--primary: 'Helvetica Neue', Helvetica, 'Noto Sans TC', Arial, '微軟正黑體', sans-serif;
+    --ff--secondary: '王漢宗特明體一標準','Helvetica Neue', Helvetica, 'Noto Sans TC', Arial, '微軟正黑體', sans-serif;
+  }
+
+/* ------------------------------ *\
+    Light Theme
+\* ------------------------------ */  
+.light-theme{
+    color: var(--black) !important;
+}
+.light-theme .wrapper{
+    background-color: var(--white);
+    background-image: none;
+}
+.light-theme .navbar{
+    background-color: var(--dark-80);
+}
+.light-theme .nav-link{
+    /* border-width: 0 1px ;
+    border-style: solid;
+    border-color: var(--white); */
+    color: var(--white);
+}
+.light-theme .btn-group .nav-link:hover{
+    color: var(--gold);
+}
+.light-theme .btn-group .nav-link:active{
+    color: var(--tan-gold);
+}
+.light-theme .ad-section:nth-child(1) .nav-link{
+    color: var(--gold);
+}
+.light-theme .ad-section:nth-child(3) .nav-link:active{
+    color: var(--white);
+}
+.light-theme .ad-section:nth-child(4) .nav-link:hover{
+    color: var(--tan-gold);
+}
+.light-theme .ad-section:nth-child(4) .nav-link:active{
+    color: var(--gold);
+}
+.light-theme .footer{
+    background-color: var(--dark-80);
+}
+.light-theme .footer .copyright{
+    background-color: transparent;
+}
