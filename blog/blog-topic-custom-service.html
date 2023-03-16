@@ -8,7 +8,10 @@
     <!-- CSS reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google fonts -->    
+    <!-- Preload fonts -->
+    <link rel="preload" as="font" href="assets/fonts/王漢宗特明體/WCL-02.woff2" type="font/woff2" crossorigin="anonymous">    
+    
+    <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap Grid CSS --> 
@@ -46,11 +49,11 @@
           <!-- End brand -->
 
           <!-- Start toggle-btn -->
-          <a href="#!" class="toggle-btn">
+          <div class="toggle-btn">
             <span class="bar bar-top bar--sm"></span>
             <span class="bar bar-middle"></span>
             <span class="bar bar-bottom bar--sm"></span>
-          </a>
+          </div>
           <!-- End toggle-btn -->
 
           <!-- Start navbar-nav -->
@@ -67,7 +70,7 @@
               <li class="nav-item">
                 <a href="about.html" class="nav-link">
                   <i class="fa-solid fa-circle-info"></i>
-                  <span>關於</span>
+                  <span>關於竹慶</span>
                 </a>
               </li>
               <!-- projects -->
@@ -80,36 +83,53 @@
                 <!-- dropdown-menu-1 -->
                 <div class="dropdown-menu-1">
                   <ul>
-                    <!-- 熱銷中 -->
-                    <li class="nav-item dropdown-2" id="navbar-nav-projects-for-sale">
-                      <a href="#!" class="nav-link">
+                    <!-- presale 最新建案 -->
+                    <li class="nav-item dropdown-2 show-hide-projects-presale-item" id="navbar-nav-projects-presale">
+                      <a href="projects-presale.html" target="_blank" class="nav-link">
                         <i class="fa-solid fa-house-fire"></i>
-                        <span>熱銷建案</span>
+                        <span>最新建案</span>
+                        <i class="fa-solid fa-chevron-right"></i>
                       </a>
+                      
+                      <!-- dropdown-menu-2 -->
+                      <div class="dropdown-menu-2">
+                        <ul>
+                          <!-- 新案觀賞 -->
+                          <li class="nav-item">
+                            <a href="projects-presale.html" target="_blank" class="nav-link">
+                              <span>新案觀賞</span>
+                            </a>
+                          </li>
+                          <!-- 預約填表 -->
+                          <li class="nav-item">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQtX7kEmDH4uedfXelz3hLR9xyrNuN7Un6NdOwMF96YD-hJQ/viewform" target="_blank" class="nav-link">
+                              <span>預約賞屋</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
 
-                    <!-- 開發中 -->
+                    <!-- 興建中 -->
                     <li class="nav-item dropdown-2" id="navbar-nav-projects-in-development">
                       <a href="projects-in-development.html" class="nav-link">
                         <i class="fa-solid fa-person-digging"></i>
-                        <span>開發中</span>
+                        <span>興建中</span>
                         <i class="fa-solid fa-chevron-right"></i>
                       </a>
 
                       <!-- dropdown-menu-2 -->
                       <div class="dropdown-menu-2">
                         <ul>
-
                           <!-- 金叡 -->
                           <li class="nav-item">
-                            <a href="project-in-development-1.html" class="nav-link">
+                            <a href="project-in-development-2.html" class="nav-link">
                               <span>金叡</span>
                             </a>
                           </li>
-                          
                           <!-- 同理 -->
                           <li class="nav-item">
-                            <a href="project-in-development-2.html" class="nav-link">
+                            <a href="project-in-development-1.html" class="nav-link">
                               <span>同理</span>
                             </a>
                           </li>
@@ -117,7 +137,7 @@
                       </div>
                     </li>
                     
-                    <!-- 已完工 -->
+                    <!-- 歷年建案 -->
                     <li class="nav-item dropdown-2" id="navbar-nav-projects-finished">
                       <a href="projects-finished.html" class="nav-link">
                         <i class="fa-solid fa-building-circle-check"></i>
@@ -129,26 +149,62 @@
                       <div class="dropdown-menu-2">
                         <ul>
 
-                          <!-- 金宴 -->
+                          <!-- project-finished-111a 金宴 -->
                           <li class="nav-item">
-                            <a href="#!" class="nav-link">
+                            <a href="project-finished-111a.html" class="nav-link">
                               <span>金宴</span>
                             </a>
                           </li>
 
-                          <!-- 金采 -->
+                          <!-- project-finished-110a 金采 -->
                           <li class="nav-item">
-                            <a href="#!" class="nav-link">
+                            <a href="project-finished-110a.html" class="nav-link">
                               <span>金采</span>
                             </a>
                           </li>
 
-                          <!-- 金璽 -->
+                          <!-- project-finished-109b 金璽 -->
                           <li class="nav-item">
-                            <a href="#!" class="nav-link">
+                            <a href="project-finished-109b.html" class="nav-link">
                               <span>金璽</span>
                             </a>
                           </li>
+
+                          <!-- project-finished-109a 清大御璽 -->
+                          <li class="nav-item">
+                            <a href="project-finished-109a.html" class="nav-link">
+                              <span>清大御璽</span>
+                            </a>
+                          </li>
+
+                          <!-- project-finished-107a 18品 -->
+                          <li class="nav-item">
+                            <a href="project-finished-107a.html" class="nav-link">
+                              <span>18品</span>
+                            </a>
+                          </li>
+
+                          <!-- project-finished-106a 琉森 -->
+                          <li class="nav-item">
+                            <a href="project-finished-106a.html" class="nav-link">
+                              <span>琉森</span>
+                            </a>
+                          </li>
+
+                          <!-- project-finished-105b 雲川 -->
+                          <li class="nav-item">
+                            <a href="project-finished-105b.html" class="nav-link">
+                              <span>雲川</span>
+                            </a>
+                          </li>
+
+                          <!-- project-finished-105a 世博苑 -->
+                          <li class="nav-item">
+                            <a href="project-finished-105a.html" class="nav-link">
+                              <span>世博苑</span>
+                            </a>
+                          </li>
+
                         </ul>
                       </div>
                     </li>
@@ -156,7 +212,7 @@
                 </div>
               </li>
               <!-- blog -->
-              <li class="nav-item dropdown-1" id="navbar-nav-blog">
+              <li class="nav-item dropdown-1 show-hide-blog-item" id="navbar-nav-blog">
                 <a href="blog.html" class="nav-link">
                   <i class="fa-solid fa-helmet-safety"></i>
                   <span>臻工竹慶</span>
@@ -167,25 +223,25 @@
                 <div class="dropdown-menu-1">
                   <ul>
 
-                    <!-- 工程 -->
+                    <!-- blog-topic-engineering 工程 -->
                     <li class="nav-item dropdown-2" id="navbar-nav-engineering">
-                      <a href="#!" class="nav-link">
+                      <a href="blog-topic-engineering.html" class="nav-link">
                         <i class="fa-solid fa-hammer"></i>
                         <span>工程</span>
                       </a>
                     </li>
 
-                    <!-- 居家 -->
+                    <!-- blog-topic-homelife 居家 -->
                     <li class="nav-item dropdown-2" id="navbar-nav-homelife">
-                      <a href="#!" class="nav-link">
+                      <a href="blog-topic-homelife.html" class="nav-link">
                         <i class="fa-solid fa-couch"></i>
                         <span>居家</span>
                       </a>
                     </li>
                     
-                    <!-- 服務 -->
+                    <!-- blog-topic-custom-service 服務 -->
                     <li class="nav-item" id="navbar-nav-custom-service">
-                      <a href="#!" class="nav-link">
+                      <a href="blog-topic-custom-service.html" class="nav-link">
                         <i class="fa-solid fa-handshake"></i>
                         <span>服務</span>
                       </a>
@@ -197,13 +253,13 @@
               <li class="nav-item">
                 <a href="contact.html" class="nav-link">
                   <i class="fa-solid fa-user"></i>
-                  <span>聯絡</span>
+                  <span>聯絡我們</span>
                 </a>
               </li>
               <!-- facebook link -->
               <li class="nav-item">
                 <a href="https://www.facebook.com/people/%E7%AB%B9%E6%85%B6%E5%BB%BA%E8%A8%AD/100057349633749/" class="nav-link" target="_blank">
-                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-square-facebook fa-xl"></i>
                 </a>
               </li>
             </ul>
@@ -224,7 +280,7 @@
               <li class="nav-item">
                 <a href="about.html" class="nav-link">
                   <i class="fa-solid fa-circle-info"></i>
-                  <div>關於</div>
+                  <div>關於竹慶</div>
                 </a>
               </li>
               <!-- projects -->
@@ -236,59 +292,108 @@
                 </a>
                 <div class="dropdown-menu-1">
                   <ul>
-                    <!-- 熱銷中 預售屋 -->
-                    <li class="nav-item" id="toggle-nav-projects-for-sale">
-                      <a href="#!" class="nav-link">
+                    <!-- projects-presale 最新建案 -->
+                    <li class="nav-item dropdown-2 show-hide-projects-presale-item" id="toggle-nav-projects-presale">
+                      <div class="nav-link">
                         <i class="fa-solid fa-house-fire"></i>
-                        <span>熱銷中</span>
-                      </a>
-                    </li>
-                    <!-- 開發中 -->
-                    <li class="nav-item dropdown-2" id="toggle-nav-projects-in-development">
-                      <a href="#!" class="nav-link">
-                        <i class="fa-solid fa-person-digging"></i>
-                        <span>開發中</span>
+                        <span>最新建案</span>
                         <i class="fa-solid fa-chevron-down"></i>
-                      </a>
+                      </div>
                       <div class="dropdown-menu-2">
                         <ul>
                           <li class="nav-item">
-                            <a href="project-in-development-1.html" class="nav-link">
-                              <div>金叡</div>
+                            <a href="projects-presale.html" target="_blank" class="nav-link">
+                              <div>新案觀賞</div>
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a href="project-in-development-2.html" class="nav-link">
-                              <span>同理</span>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQtX7kEmDH4uedfXelz3hLR9xyrNuN7Un6NdOwMF96YD-hJQ/viewform" target="_blank" class="nav-link">
+                              <div>預約賞屋</div>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    <!-- 已完工 -->
+                    <!-- 興建中 -->
+                    <li class="nav-item dropdown-2" id="toggle-nav-projects-in-development">
+                      <div class="nav-link">
+                        <i class="fa-solid fa-person-digging"></i>
+                        <span>興建中</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                      <div class="dropdown-menu-2">
+                        <ul>
+                          <li class="nav-item">
+                            <a href="project-in-development-2.html" class="nav-link">
+                              <span>金叡</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="project-in-development-1.html" class="nav-link">
+                              <div>同理</div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <!-- 歷年建案 -->
                     <li class="nav-item dropdown-2" id="toggle-nav-projects-finished">
                       <a href="#!" class="nav-link">
                         <i class="fa-solid fa-building-circle-check"></i>
-                        <span>已完工</span>
+                        <span>歷年建案</span>
                         <i class="fa-solid fa-chevron-down"></i>
                       </a>
                       <div class="dropdown-menu-2">
                         <ul>
+                          <!-- project-finished-111a 金宴 -->
                           <li class="nav-item">
-                            <a href="#!" class="nav-link">
+                            <a href="project-finished-111a.html" class="nav-link">
                               <span>金宴</span>
                             </a>
                           </li>
+                          <!-- project-finished-110a 金采 -->
                           <li class="nav-item">
-                            <a href="#!" class="nav-link">
+                            <a href="project-finished-110a.html" class="nav-link">
                               <span>金采</span>
                             </a>
                           </li>
+                          <!-- project-finished-109b 金璽 -->
                           <li class="nav-item">
-                            <a href="#!" class="nav-link">
+                            <a href="project-finished-109b.html" class="nav-link">
                               <span>金璽</span>
                             </a>
                           </li>
+                          <!-- project-finished-109a 清大御璽 -->
+                          <li class="nav-item">
+                            <a href="project-finished-109a.html" class="nav-link">
+                              <span>清大御璽</span>
+                            </a>
+                          </li>                
+                          <!-- project-finished-107a 18品 -->
+                          <li class="nav-item">
+                            <a href="project-finished-107a.html" class="nav-link">
+                              <span>18品</span>
+                            </a>
+                          </li>      
+                          <!-- project-finished-106a 琉森 -->
+                          <li class="nav-item">
+                            <a href="project-finished-106a.html" class="nav-link">
+                              <span>琉森</span>
+                            </a>
+                          </li>      
+                          <!-- project-finished-105b 雲川 -->
+                          <li class="nav-item">
+                            <a href="project-finished-105b.html" class="nav-link">
+                              <span>雲川</span>
+                            </a>
+                          </li>      
+                          <!-- project-finished-105a 世博苑 -->
+                          <li class="nav-item">
+                            <a href="project-finished-105a.html" class="nav-link">
+                              <span>世博苑</span>
+                            </a>
+                          </li>      
+                          
                         </ul>
                       </div>
                     </li>
@@ -296,12 +401,12 @@
                 </div>
               </li>
               <!-- blog -->
-              <li class="nav-item" id="toggle-nav-blog">
-                <a href="#!" class="nav-link">
+              <li class="nav-item show-hide-blog-item" id="toggle-nav-blog">
+                <div class="nav-link">
                   <i class="fa-solid fa-helmet-safety"></i>
                   <div>臻工竹慶</div>
                   <i class="fa-solid fa-chevron-down"></i>
-                </a>
+                </div>
 
                 <!-- dropdown-menu-1 -->
                 <div class="dropdown-menu-1">
@@ -309,7 +414,7 @@
 
                     <!-- 工程 -->
                     <li class="nav-item" id="dropdown-2">
-                      <a href="#!" class="nav-link">
+                      <a href="blog-topic-engineering.html" class="nav-link">
                         <i class="fa-solid fa-hammer"></i>
                         <span>工程</span>
                       </a>
@@ -317,7 +422,7 @@
 
                     <!-- 居家 -->
                     <li class="nav-item" id="dropdown-2">
-                      <a href="#!" class="nav-link">
+                      <a href="blog-topic-homelife.html" class="nav-link">
                         <i class="fa-solid fa-couch"></i>
                         <span>居家</span>
                       </a>
@@ -325,7 +430,7 @@
                     
                     <!-- 客服 -->
                     <li class="nav-item" id="dropdown-2">
-                      <a href="#!" class="nav-link">
+                      <a href="blog-topic-custom-service.html" class="nav-link">
                         <i class="fa-solid fa-handshake"></i>
                         <span>客服</span>
                       </a>
@@ -337,7 +442,7 @@
               <li class="nav-item">
                 <a href="contact.html" class="nav-link">
                   <i class="fa-solid fa-user"></i>
-                  <div>聯絡</div>
+                  <div>聯絡我們</div>
                 </a>
               </li>
               <!-- facebook link -->

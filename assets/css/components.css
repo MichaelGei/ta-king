@@ -1834,12 +1834,9 @@
     padding-bottom: 35rem;
 }
 
-/* navbar-nav-blog */
-#navbar-nav-blog{
-    display: none;
-}
-#toggle-nav-blog{
-    display: none;
+/* show-hide-projects-blog-item */
+.show-hide-blog-item{
+    display: none !important;
 }
 
 /* show-hide-projects-presale-item */
