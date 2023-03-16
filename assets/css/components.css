@@ -1844,7 +1844,7 @@
 
 /* show-hide-projects-presale-item */
 .show-hide-projects-presale-item{
-    /* display: none !important; */
+    display: none !important;
 }
 
 /* Clearfix */
