@@ -6,18 +6,19 @@ const eachNavLink = document.querySelectorAll('.nav-link').forEach(link => {
 })
 // Navbar Scrolled down Effect
 // console.log('Hello World')
-const nav = document.querySelector('.navbar');
+// const nav = document.querySelector('.navbar');
 
-window.onscroll = function(){
-    var top = window.scrollY;
-    console.log(top);
-    if (top >= 1) {
-        nav.classList.add('scrolled')
-    } 
-    else{
-        nav.classList.remove('scrolled');
-    }
-}
+// window.onscroll = function(){
+//     var top = window.scrollY;
+//     console.log(top);
+//     if (top >= 1) {
+//         nav.classList.add('scrolled')
+//     } 
+//     else{
+//         nav.classList.remove('scrolled');
+//     }
+// }
+
 // Dropdown-menu
 
 /*
