@@ -1211,8 +1211,8 @@
 .overlay.overlay--50{
     background-color: var(--dark-grey-50);
 }
-.overlay.overlay--25{
-    background-color: var(--dark-grey-25);
+.overlay.overlay--30{
+    background-color: var(--dark-grey-30);
 }
 .overlay.overlay--20{
     background-color: var(--dark-grey-20);
