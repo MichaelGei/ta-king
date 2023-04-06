@@ -1656,6 +1656,12 @@
             -ms-flex-pack: right;
                 justify-content: right;
     }
+    .jumbotron .tabs.tabs--centre,
+    .jumbotron .btn-group.btn-group--centre{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
 }
 .btn-group--bottom{
     padding-top: 85vh;
@@ -1846,7 +1852,7 @@
 
 /* show-hide-projects-presale-item */
 .show-hide-projects-presale-item{
-    display: none !important;
+    display: block !important;
 }
 
 /* Clearfix */
