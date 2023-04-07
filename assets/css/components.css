@@ -1774,11 +1774,11 @@
     background-color: var(--light-grey);
 }
 #ad-section-4{
-    /* display: none; */
+    display: none;
     background-color: var(--dark-grey);
 }
 #ad-section-5{
-    display: none;
+    /* display: none; */
     background-color: var(--white);
 }
 .ad-section:first-child{
