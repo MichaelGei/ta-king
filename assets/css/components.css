@@ -1767,8 +1767,19 @@
         background-image: url('../images/projects/presale/section-1/section-1-poster-720.png');
     }
 }
+#ad-section-2{
+    background-color: var(--white);
+}
+#ad-section-3{
+    background-color: var(--light-grey);
+}
 #ad-section-4{
-    display: none;    
+    /* display: none; */
+    background-color: var(--grey);
+}
+#ad-section-5{
+    display: none;
+    background-color: var(--white);
 }
 .ad-section:first-child{
     width: 100%;
@@ -1776,21 +1787,11 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: var(--light-grey);
 }
 @media screen and (max-width: 575.98px) {
     .ad-section:first-child{
         height: 95vh;
     }
-}
-.ad-section:nth-child(2){
-    background-color: var(--white);
-}
-.ad-section:nth-child(3){
-    background-color: var(--light-grey);
-}
-.ad-section:nth-child(4){
-    background-color: var(--grey);
 }
 
 /* ------------------------------ *\
