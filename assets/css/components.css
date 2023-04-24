@@ -1779,6 +1779,9 @@
 #ad-section-5{
     background-color: var(--grey);
 }
+#ad-section-6{
+    background-color: var(--white);
+}
 .ad-section:first-child{
     width: 100%;
     height: 100vh;
