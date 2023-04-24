@@ -482,7 +482,7 @@
     font-size: 5rem;
     top: 70%;
     text-align: center;
-    color: var(--dark);
+    color: var(--light-grey);
     -webkit-animation: fadeOutDown 1.25s ease-out infinite;
             animation: fadeOutDown 1.25s ease-out infinite;
 }
