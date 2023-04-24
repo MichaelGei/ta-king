@@ -452,7 +452,7 @@
     display: block;
     content: '';
     width: 100%;
-    background-image: url('../images/common/jumbotron-bg-1-1920.jpg');
+    background-image: url('../images/projects/presale/section-1/section-1-poster-1920.png');
     background-size: cover;
     background-position: center center;
 
@@ -500,7 +500,7 @@
 }
 @media screen and (max-width: 575.98px) {
     .jumbotron{
-        background-image: url('../images/common/jumbotron-bg-1-960.jpg');
+        background-image: url('../images/projects/presale/section-1/section-1-poster-720.png');
         background-size: contain;
         padding-top: calc(39vh + 3rem);
         padding-bottom: 1vh;
@@ -1285,7 +1285,7 @@
     transition: all 0s;
 }
 .btn--dark{
-    border: .125rem solid var(--dark-80);
+    border: .25rem solid var(--dark-80);
     background-color: var(--dark-80);
 }
 .btn--dark.btn:hover,
@@ -1297,6 +1297,24 @@
 }
 .btn--dark.btn:active,
 .btn--dark.btn--active{
+    color: var(--gold);
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+}
+.btn--white{
+    border: .2rem solid var(--white);
+}
+.btn--white.btn:hover,
+.btn--white.btn--hover{
+    color: var(--tan-gold);
+    border: .2rem solid var(--tan-gold);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.btn--white.btn:active,
+.btn--white.btn--active{
     color: var(--gold);
     -webkit-transition: all 0s;
     -o-transition: all 0s;
