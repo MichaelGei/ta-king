@@ -1800,6 +1800,9 @@
 #ad-section-6{
     background-color: var(--white);
 }
+#ad-section-7{
+    background-color: var(--light-grey);
+}
 .ad-section:first-child{
     width: 100%;
     height: 100vh;
