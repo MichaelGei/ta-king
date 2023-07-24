@@ -195,6 +195,7 @@ p, .para{
 .colour--dark-grey-10{color: var(--dark-grey-10) !important;}
 .colour--light-grey{color: var(--light-grey) !important;}
 .colour--light-blue{color: var(--light-blue) !important;}
+.colour--crimson-red{color: var(--crimson-red) !important;}
 
 /* background-colour */
 .bgc--white{background-color: var(--white) !important;}
@@ -221,6 +222,7 @@ p, .para{
 .bgc--dark-grey-10{background-color: var(--dark-grey-10) !important;}
 .bgc--light-grey{background-color: var(--light-grey) !important;}
 .bgc--light-blue{background-color: var(--light-blue) !important;}
+.bgc--crimson-red{background-color: var(--crimson-red) !important;}
 
 /* ------------------------------ *\
     Utility               

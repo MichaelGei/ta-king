@@ -39,7 +39,6 @@
  * * * overlay ..............
  * * * button ..............
  * * * line ..............
- * * * tags ..............
 
  * About ..............
  * * * wrapper ..............
@@ -52,10 +51,7 @@
 
  * Projects-Presale ..............
  * * * ad-section ..............
- 
- * Contact ..............
- * * * jumbotron ..............
- 
+
  * Animation ..............
 
  * Utility ..............
@@ -116,18 +112,12 @@
 /* logo-image */
 .brand,
 .logo-image{
-    max-height: 5rem;
+    max-height: 4.5rem;
 }
-/* @media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) {
     .brand,
     .logo-image{
-        max-height: 4.5rem;
-    }
-} */
-@media screen and (max-width: 575.98px) {
-    .brand,
-    .logo-image{
-        max-height: 3.25rem;
+        max-height: 3.7rem;
     }
 }
 
@@ -473,6 +463,11 @@
     padding-top: 30vh;
     padding-bottom: calc(30vh - 4.5rem);
 }
+@media screen and (max-width: 575.98px) {
+    .jumbotron.jumbotron--presale#ad-section-1{
+        /* height: 69vh; */
+    }
+}
 .jumbotron .title{
     margin-bottom: .5em;
 }
@@ -509,6 +504,12 @@
         padding-bottom: 3vh;
         background-position: center top;
     }
+}
+@media screen and (min-width: 1921px) {
+    /* .jumbotron{
+        padding-top: 30vh;
+        padding-bottom: calc(30vh - 4.5rem);
+    } */
 }
 @media screen and (max-width: 1921px){
     .jumbotron.jumbotron--sm{
@@ -1436,22 +1437,6 @@
     transition: all 0s;
 }
 
-/* ------- tags ------- */
-.tags{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    color: var(--crimson-red);            
-    color: #970C10;            
-    opacity: 50%;
-}
-
 /* ------- projects-presale-item ------- */
 .show-projects-presale-item{
 
@@ -1487,23 +1472,6 @@
 /* ------- jumbotron ------- */
 .about .jumbotron{
     background-image: url('../images/common/jumbotron-bg-1-1920.jpg');
-}
-@media screen and (max-width: 1199.98px) {
-    .about .jumbotron{
-        padding-top: calc(73vh + 3rem);
-        padding-bottom: 1vh;
-        background-image: url('../images/common/jumbotron-bg-1-960.jpg');
-        background-position: top center;
-    }
-}
-@media screen and (max-width: 767.98px) {
-    .about .jumbotron{
-        background-image: url('../images/common/jumbotron-bg-1-960.jpg');
-        background-size: contain;
-        padding-top: calc(39vh + 3rem);
-        padding-bottom: 3vh;
-        background-position: center top;
-    }
 }
 .about .jumbotron .jumbotron-down-icon{
     color: var(--dark);
@@ -1855,33 +1823,6 @@
 }
 
 /* ------------------------------ *\
-    Contact
-\* ------------------------------ */
-/* -------  Animation css ------- */
-/* ------- jumbotron ------- */
-.contact .jumbotron{
-    background-image: url('../images/common/jumbotron-bg-1-1920.jpg');
-}
-@media screen and (max-width: 1199.98px) {
-    .contact .jumbotron{
-        padding-top: calc(73vh + 3rem);
-        padding-bottom: 1vh;
-        background-image: url('../images/common/jumbotron-bg-1-960.jpg');
-        background-position: top center;
-    }
-}
-@media screen and (max-width: 767.98px) {
-    .contact .jumbotron{
-        background-image: url('../images/common/jumbotron-bg-1-960.jpg');
-        background-size: contain;
-        padding-top: calc(39vh + 3rem);
-        padding-bottom: 3vh;
-        background-position: center top;
-    }
-}
-
-
-/* ------------------------------ *\
     Animation
 \* ------------------------------ */
 
@@ -1893,8 +1834,8 @@
             animation: fadeOutDown 1.25s ease-out infinite;
 }
 .ani-fadeIn{
-    -webkit-animation: fadeIn 1.75s ease-out infinite;
-            animation: fadeIn 1.75s ease-out infinite;
+    -webkit-animation: fadein 1.25s ease-out infinite;
+            animation: fadeOutDown 1.25s ease-out infinite;
 }
 /* -------  Animation on scroll ------- */
 /* order */
@@ -1945,3 +1886,10 @@
     display: none !important;
 }
 
+/* show-hide-projects-presale-item */
+.show-hide-projects-presale-item{
+    display: block !important;
+}
+
+/* Clearfix */
+.clearfix{}
