@@ -481,10 +481,18 @@
 .jumbotron .subtitle{
     margin-bottom: 1em;
 }
+.jumbotron .btn-group{
+    gap: 6rem;
+}
+@media screen and (max-width: 575.98px) {
+    .jumbotron .btn-group{
+        gap: 3rem;
+    }
+}
 @media screen and (max-width: 1199.98px) {
     .jumbotron{
-        padding-top: 80vh;
-        padding-bottom: 15vh;
+        padding-top: 60vh;
+        padding-bottom: 35vh;
         background-image: url('../images/projects/presale/section-1/section-1-poster-1024.png');
         background-position: top center;
     }
@@ -511,13 +519,12 @@
 }
 @media screen and (max-width: 1199.98px) {
     .jumbotron .jumbotron-down-icon{
-        top: 85%;
+        top: 65%;
     }
 }
 @media screen and (max-width: 575.98px) {
     .jumbotron .jumbotron-down-icon{
         /* display: none; */
-        top: 60%;
         font-size: 3rem;
     }
 }
@@ -1841,9 +1848,18 @@
             animation: fadeOutDown 1.25s ease-out infinite;
 }
 .ani-fadeIn{
-    -webkit-animation: fadeIn 1.25s ease-out infinite;
-            animation: fadeIn 1.25s ease-out infinite;
+    -webkit-animation: fadeIn 3s ease-in-out infinite;
+            animation: fadeIn 3s ease-in-out infinite;
 }
+.ani-pulse{
+    -webkit-animation: pulse 1.5s ease-out infinite;
+            animation: pulse 1.5s ease-out infinite;
+}
+/* animation-delay */
+.ani-delay-1{
+    animation-delay: 1s;
+}   
+
 /* -------  Animation on scroll ------- */
 /* order */
 .aos--firstIn[data-aos]{
