@@ -494,8 +494,8 @@
         background-image: url('../images/projects/presale/section-1/section-1-poster-720.png');
         background-attachment: local;
         background-size: cover;
-        padding-top: 55vh;
-        padding-bottom: 35vh;;
+        padding-top: 75vh;
+        padding-bottom: 25vh;
         background-position: top center;
     }
 }
@@ -517,7 +517,7 @@
 @media screen and (max-width: 575.98px) {
     .jumbotron .jumbotron-down-icon{
         /* display: none; */
-        top: 60%;
+        top: 70%;
         font-size: 3rem;
     }
 }
