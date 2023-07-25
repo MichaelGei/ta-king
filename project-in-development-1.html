@@ -37,6 +37,9 @@
     <!-- Animate on scroll AOS css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- CSS Custom -->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/theme.css">
@@ -592,6 +595,10 @@
                   <div class="title h3 ff--secondary border-left border--gold">
                     同理
                   </div>
+                  <div class="h4 subtitle ff--secondary ani-fadeIn colour--light-blue ani-fadeIn">
+                    <i class="fa-solid fa-circle fa-2xs"></i>
+                    <span>即將完工</span>
+                  </div>
                   <div class="h6 description">
                     在地深耕的建築品牌帶給您一橋之境 － 城區、學區、園區皆近在咫尺，市中心指標個案，魅力席捲！
                   </div>
@@ -705,7 +712,6 @@
           renderBullet: function (index, className) {
             return `<div class="${className}">
             <span class="dot"></span>
-            <span class="number">${index + 1}</span>
             </div>`
           },
         },

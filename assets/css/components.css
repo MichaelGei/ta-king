@@ -788,7 +788,9 @@
     scale: 1.25;
     opacity: .7;
 }
+.swiper-slide .tags{
 
+}
 /* figcaption */
 .swiper-slide figcaption{
     position: absolute;
@@ -1318,14 +1320,12 @@
     transition: all 0s;
 }
 .btn--light{
-    border: .125rem solid var(--grey-90);
     border: none;
     background-color: var(--grey-90);
     color: var(--white);
 }
 .btn--light.btn:hover,
 .btn--light.btn--hover{
-    /* border: .125rem solid var(--dark); */
     color: var(--dark);
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -1333,10 +1333,7 @@
 }
 .btn--light.btn:active,
 .btn--light.btn--active{
-    /* background-color: var(--light-grey); */
     color: var(--light-grey);
-    /* outline: .25rem solid var(--light-grey);
-    outline-offset: -.125rem; */
     -webkit-transition: all 0s;
     -o-transition: all 0s;
     transition: all 0s;
@@ -1438,18 +1435,17 @@
 
 /* ------- tags ------- */
 .tags{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
     position: absolute;
     top: 10%;
     left: 15%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    color: var(--crimson-red);            
-    color: #970C10;            
-    opacity: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    color: var(--crimson-red);
 }
 
 /* ------- projects-presale-item ------- */
@@ -1886,15 +1882,15 @@
 \* ------------------------------ */
 
 
-/* -------  Animation css ------- */
+/* -------  Animate css ------- */
 /* animation */
 .ani-fadeOutDown{
     -webkit-animation: fadeOutDown 1.25s ease-out infinite;
             animation: fadeOutDown 1.25s ease-out infinite;
 }
 .ani-fadeIn{
-    -webkit-animation: fadeIn 1.75s ease-out infinite;
-            animation: fadeIn 1.75s ease-out infinite;
+    -webkit-animation: fadeIn 1.25s ease-out infinite;
+            animation: fadeIn 1.25s ease-out infinite;
 }
 /* -------  Animation on scroll ------- */
 /* order */
