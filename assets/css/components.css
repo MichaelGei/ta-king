@@ -1875,6 +1875,9 @@
         background-position: center top;
     }
 }
+.contact .jumbotron .jumbotron-down-icon{
+    color: var(--dark);
+}
 
 
 /* ------------------------------ *\
