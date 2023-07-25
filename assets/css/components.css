@@ -517,7 +517,7 @@
 @media screen and (max-width: 575.98px) {
     .jumbotron .jumbotron-down-icon{
         /* display: none; */
-        top: 70%;
+        top: 80%;
         font-size: 3rem;
     }
 }
