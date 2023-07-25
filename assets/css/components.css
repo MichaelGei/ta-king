@@ -469,7 +469,7 @@
 
     background-repeat: no-repeat;
     /* 視差滾動 */
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 .jumbotron.jumbotron--sm{
     padding-top: 30vh;
@@ -492,10 +492,10 @@
 @media screen and (max-width: 575.98px) {
     .jumbotron{
         background-image: url('../images/projects/presale/section-1/section-1-poster-720.png');
-        /* background-size: contain; */
+        background-attachment: local;
         background-size: cover;
-        padding-top: 80vh;
-        padding-bottom: 20vh;
+        padding-top: 55vh;
+        padding-bottom: 35vh;;
         background-position: top center;
     }
 }
@@ -516,7 +516,8 @@
 }
 @media screen and (max-width: 575.98px) {
     .jumbotron .jumbotron-down-icon{
-        top: 80%;
+        /* display: none; */
+        top: 60%;
         font-size: 3rem;
     }
 }
