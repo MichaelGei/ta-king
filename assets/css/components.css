@@ -516,9 +516,9 @@
 }
 @media screen and (max-width: 575.98px) {
     .jumbotron .jumbotron-down-icon{
-        display: none;
-        /* top: 80%;
-        font-size: 3rem; */
+        /* display: none; */
+        top: 60%;
+        font-size: 3rem;
     }
 }
 @media screen and (max-width: 1921px){
