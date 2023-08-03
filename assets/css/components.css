@@ -177,7 +177,6 @@
     position: relative;
     background-color: transparent;
     border: none;
-    border: none;
 }
 .dropdown-menu-2{
     display: none;
@@ -1786,9 +1785,6 @@
 \* ------------------------------ */
 
 /* ------- ad-section ------- */
-.ad-section{
-    
-}
 #ad-section-1{
     background-image: url('../images/projects/presale/section-1/section-1-poster-1920.png');
 }
@@ -1903,9 +1899,3 @@
     content: '';
     padding-bottom: 35rem;
 }
-
-/* show-hide-projects-blog-item */
-.show-hide-blog-item{
-    display: none !important;
-}
-
