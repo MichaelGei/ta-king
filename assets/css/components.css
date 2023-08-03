@@ -59,7 +59,7 @@
  * Animation ..............
 
  * Utility ..............
- * * * projects-presale-item ..............
+ * * * Test-box ..............
  * /
 
 /* ------------------------------ *\
@@ -1467,11 +1467,6 @@
     justify-content: center;
     gap: .25rem;
     color: var(--crimson-red);
-}
-
-/* ------- projects-presale-item ------- */
-.show-projects-presale-item{
-
 }
 
 /* ------- line ------- */
