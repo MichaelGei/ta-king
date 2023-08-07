@@ -1,11 +1,12 @@
-@charset "UTF-8";
-@import url('theme.css');
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+
+@charset "UTF-8";
+@import url('theme.css');
 
 /*      
  * Components
@@ -118,12 +119,6 @@
 .logo-image{
     max-height: 5rem;
 }
-/* @media screen and (max-width: 991.98px) {
-    .brand,
-    .logo-image{
-        max-height: 4.5rem;
-    }
-} */
 @media screen and (max-width: 575.98px) {
     .brand,
     .logo-image{
@@ -404,10 +399,6 @@
         background: -o-linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(18,38,32,1) 50%, rgba(182,141,64,1) 100%);
         background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(18,38,32,1) 50%, rgba(182,141,64,1) 100%);
         display: block;
-        /* display: flex; */
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: center; */
         -webkit-transition: all 0.6s;
         -o-transition: all 0.6s;
         transition: all 0.6s;
@@ -1000,9 +991,6 @@
     margin-bottom: .5em;
     font-weight: 700;
 }
-/* .title.ff--secondary{
-    font-weight: 500;
-} */
 .subtitle{
     margin-bottom: .5em;
     font-weight: 500;
@@ -1021,7 +1009,6 @@
 }
 
 /* ------- card ------- */
-
 .card{
     border: 1px solid var();
     background-color: var(--white);
@@ -1037,8 +1024,6 @@
 .card_body,
 .card-preview{
     padding: 1rem;
-    /* background-color: var(--white); */
-
     background-color: var(--white);
 }
 @media screen and (max-width: 1199.98px) {
@@ -1056,7 +1041,6 @@
 .card-subtitle{
     margin-bottom: .5em;
     font-weight: 500;
-    /* font-size: 1.25rem; */
 }
 
 .card-subtitle#tiles{
@@ -1069,7 +1053,6 @@
     color: var(--tan-gold);
 }
 .card-para{
-    /* margin-top: .5em; */
     margin-bottom: .5rem;
     line-height: 1.5;
     overflow: hidden;
@@ -1408,7 +1391,9 @@
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1462,9 +1447,15 @@
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: .25rem;
     color: var(--crimson-red);
 }
@@ -1647,7 +1638,6 @@
             align-items: center;
 }
 .projects-presale .tabs, .projects-presale .btn-group{
-    /* display: none; */
     width: 100%;
     text-align: center;
     gap: 0;
@@ -1655,7 +1645,8 @@
     bottom: 0;
     font-size: 1rem;
     z-index: 1;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: var(--dark);
 }
 .projects-presale .tabs i, .projects-presale .btn-group i{
@@ -1680,11 +1671,6 @@
             justify-content: center;
 }
 @media screen and (max-width: 575.98px) {
-    .tabs.tabs--centre, .btn-group.btn-group--centre{
-        /* -webkit-box-pack: right;
-            -ms-flex-pack: right;
-                justify-content: right; */
-    }
     .jumbotron .tabs.tabs--centre,
     .jumbotron .btn-group.btn-group--centre{
         -webkit-box-pack: center;
@@ -1704,7 +1690,6 @@
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
-    /* padding-left: 50%; */
 }
 .btn-group--space-around{
     -ms-flex-pack: distribute;
@@ -1848,7 +1833,8 @@
 }
 /* animation-delay */
 .ani-delay-1{
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }   
 
 /* -------  Animation on scroll ------- */

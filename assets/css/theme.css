@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 @font-face {
     /* font-family: '王漢宗特明體一標準'; */
@@ -13,13 +20,6 @@
  * Licenced Under MIT
  * /
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* ------------------------------ *\
     Content
 \* ------------------------------ */
@@ -32,10 +32,10 @@
  * Light Theme .............. Set Light Theme (projects-presale.html)
  * /
 
- /* ------------------------------ *\
-    Variables
+/* ------------------------------ *\
+    Variables               
 \* ------------------------------ */
-
+/* Colour Theme */ 
 :root{
 
     /* colour */
@@ -69,9 +69,8 @@
 
     --light-blue: #89cff0;
     --crimson-red: #970C10;
+
     /* typography */
-
-
     /* font-family */
     --ff--primary: 'Helvetica Neue', Helvetica, 'Noto Sans TC', Arial, '微軟正黑體', sans-serif;
     --ff--secondary: '王漢宗特明體','Helvetica Neue', Helvetica, 'Noto Sans TC', Arial, '微軟正黑體', sans-serif;
@@ -91,9 +90,6 @@
     background-color: var(--dark-80);
 }
 .light-theme .nav-link{
-    /* border-width: 0 1px ;
-    border-style: solid;
-    border-color: var(--white); */
     color: var(--white);
 }
 .light-theme .btn-group .nav-link:hover{
