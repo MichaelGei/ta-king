@@ -53,6 +53,9 @@
 
  * Projects-Presale ..............
  * * * ad-section ..............
+
+ * Projects-Presale-2 ..............
+ * * * ad-section ..............
  
  * Contact ..............
  * * * jumbotron ..............
@@ -1767,6 +1770,7 @@
 /* ------- ad-section ------- */
 #ad-section-1{
     background-image: url('../images/projects/presale/section-1/section-1-poster-1920.png');
+    background-position: center center;
 }
 @media screen and (max-width: 1199.98px) {
     #ad-section-1{
@@ -1776,6 +1780,8 @@
 @media screen and (max-width: 575.98px) {
     #ad-section-1{
         background-image: url('../images/projects/presale/section-1/section-1-poster-720.png');
+        background-position: center bottom;
+
     }
 }
 #ad-section-2{
@@ -1808,6 +1814,28 @@
         height: 95vh;
     }
 }
+
+/* ------------------------------ *\
+    Projects-Presale-2
+\* ------------------------------ */
+
+/* ------- ad-section ------- */
+.projects-presale-2 #ad-section-1{
+    background-image: url('../images/projects/presale/2/section-1/poster-1-1920.png');
+}
+@media screen and (max-width: 1199.98px) {
+    .projects-presale-2 #ad-section-1{
+        background-image: url('../images/projects/presale/2/section-1/poster-1-1024.png');
+        background-position: bottom;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .projects-presale-2 #ad-section-1{
+        background-image: url('../images/projects/presale/2/section-1/poster-1-720.png');
+        background-position: center bottom;
+    }
+}
+
 
 /* ------------------------------ *\
     Contact
