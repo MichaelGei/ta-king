@@ -539,62 +539,7 @@
   <!-- Animate on scroll AOS JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
-  <script>
-    // Swiper
-    const projectSwiper = new Swiper('#projectSwiper', { // projectSwiper
-      centeredSlides: true,
-      speed: 500,
-      loop: true,
-      spaceBetween: 50,
-      watchSlidesProgress: true,
-      preloadImages: false,
-      lazy: true,
-      keyboard: {
-          enabled: true,
-          onlyInViewport: false,
-      },
-      lazy: {
-          loadPrevNext: true,
-      },
-      effect: 'fade',
-      fadeEffect: {
-        
-      },
-      navigation: {
-        nextEl: '#nav-right',
-        prevEl: '#nav-left',
-      },
-      pagination: {
-        el: "#projectSwiper .swiper-custom-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `<div class="${className}">
-          <span class="dot"></span>
-          <span class="number">${index + 1}</span>
-          </div>`
-        },
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: true,
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 1, 
-          watchOverflow: true,
-        }
-      },
-    })
-
-    //  Animate On Scroll AOS 
-    AOS.init({
-      offset: 200,
-      duration: 1000,
-      mirror: false,
-      easing: 'ease-out',
-      once: false,
-    });
-  </script>
-
+  <!-- Custom JS -->
+  <script src="assets/js/script-no-event.js"></script>
 </body>
 </html>

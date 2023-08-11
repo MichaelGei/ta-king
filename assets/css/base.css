@@ -332,6 +332,8 @@ p, .para{
 /* hide & show */
 .u-hide{display: none !important;}
 .u-show{display: block !important;}
+  /* projects-presale-2 */ /* projects-presale-name */
+.u-show-hide {display: none !important;}
 
 /* centre block */
 .u-centre-block{
