@@ -63,7 +63,6 @@ const indexSwiper = new Swiper('#indexSwiper', {
   },
 })
 
-// projectSwiper
 const projectSwiper = new Swiper('#projectSwiper', {
   centeredSlides: true,
   speed: 500,
@@ -166,77 +165,6 @@ function message (selector) {
   contentTarget.classList.toggle('show-hide')
 }
 
-/*
-  // navbar-nav-projects
-navbarNavProjects.addEventListener('click', function(){
-  message('#navbar-nav-projects .dropdown-menu-1')
-})
-
-  // navbar-nav-projects-pre-sale
-navbarNavProjectsPreSale.addEventListener('click', function(){
-    message('#navbar-nav-projects-pre-sale .nav-link + .dropdown-menu-2')
-  })
-
-  // navbar-nav-projects-in-development
-navbarNavProjectsInDevelopment.addEventListener('click', function(){
-    message('#navbar-nav-projects-in-development .nav-link + .dropdown-menu-2')
-})
-
-  // navbar-nav-projects-finished
-navbarNavProjectsFinished.addEventListener('click', function(){
-  message('#navbar-nav-projects-finished .nav-link + .dropdown-menu-2')
-})
-
-  // navbar-nav-blog
-navbarNavBlog.addEventListener('click', function(){
-  message('#navbar-nav-blog .dropdown-menu-1')
-})
-*/
-
-  // toggle-nav-projects
-toggleNavProjects.addEventListener('click', function(){
-  message('#toggle-nav-projects .dropdown-menu-1')
-})
-  // toggle-nav-projects-presale
-toggleNavProjectsPresale.addEventListener('click', function(){
-  message('#toggle-nav-projects-presale .dropdown-menu-2')
-})
-  // toggle-nav-projects-in-development
-toggleNavProjectsInDevelopment.addEventListener('click', function(){
-  message('#toggle-nav-projects-in-development .nav-link + .dropdown-menu-2')
-})
-  // toggle-nav-projects-finished
-toggleNavProjectsFinished.addEventListener('click', function(){
-  message('#toggle-nav-projects-finished .nav-link + .dropdown-menu-2')
-})
-  // toggle-nav-blog
-toggleNavBlog.addEventListener('click', function(){
-  message('#toggle-nav-blog .nav-link + .dropdown-menu-1')
-})
-
-/*
-navbarNavBlog.addEventListener('click', function(){
-  message('.navbar-nav #blog-link.dropdown-1 .dropdown-menu-1')
-})
-let projects = document.querySelectorAll('.dropdown-1').forEach(item => {
-  item.addEventListener('click', function() {
-    message('.dropdown-menu-1')
-  })
-})
-*/
-
-// to Open toggle-btn
-const toggleBtn = document.querySelector('.toggle-btn');
-toggleBtn.addEventListener('click', () => {
-    toggleBtn.querySelectorAll('span').forEach((span) => span.classList.toggle('open'))
-});
-
-// to Slide down toggle-nav
-const barTop = document.getElementsByClassName('toggle-btn')[0];
-const toggleNav = document.getElementsByClassName('toggle-nav')[0];
-barTop.addEventListener('click', () => {
-    toggleNav.classList.toggle('active')
-});
 
 
 //  Animate On Scroll AOS 
@@ -254,18 +182,3 @@ const tabs = document.querySelectorAll('[data-tab-target]');
 
 // const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
-      tabContent.classList.remove('show-tab-content')
-    })
-    tabs.forEach(tab => {
-      tab.classList.remove('active')
-    })
-    tab.classList.add('active')
-    target.classList.add('show-tab-content')
-    
-  })
-})

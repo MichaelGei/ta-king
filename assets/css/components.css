@@ -53,6 +53,9 @@
 
  * Projects-Presale ..............
  * * * ad-section ..............
+
+ * Projects-Presale-2 ..............
+ * * * ad-section ..............
  
  * Contact ..............
  * * * jumbotron ..............
@@ -934,6 +937,7 @@
     font-family: var(--ff--primary);
     line-height: 2;
     color: var(--light-grey);
+    color: var(--white);
 }
 @media screen and (max-width: 575.98px) {
     .swiper-custom-pagination{
@@ -959,18 +963,7 @@
     width: 2rem;
     height: .75rem;
     border-radius: 1rem;
-    background-color: var(--light-grey);
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    opacity: .3 ;
-}
-.swiper-custom-pagination .dot{
-    display: block;
-    width: 2rem;
-    height: .75rem;
-    border-radius: 1rem;
-    background-color: var(--light-grey);
+    background-color: var(--white);
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -1644,7 +1637,7 @@
     position: fixed;
     bottom: 0;
     font-size: 1rem;
-    z-index: 1;
+    z-index: 2;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-color: var(--dark);
@@ -1767,6 +1760,7 @@
 /* ------- ad-section ------- */
 #ad-section-1{
     background-image: url('../images/projects/presale/section-1/section-1-poster-1920.png');
+    background-position: center bottom;
 }
 @media screen and (max-width: 1199.98px) {
     #ad-section-1{
@@ -1776,16 +1770,18 @@
 @media screen and (max-width: 575.98px) {
     #ad-section-1{
         background-image: url('../images/projects/presale/section-1/section-1-poster-720.png');
+        background-position: center bottom;
+
     }
 }
 #ad-section-2{
-    background-color: var(--white);
-}
-#ad-section-3{
     background-color: var(--light-grey);
 }
-#ad-section-4{
+#ad-section-3{
     background-color: var(--dark-brown);
+}
+#ad-section-4{
+    background-color: var(--white);
 }
 #ad-section-5{
     background-color: var(--grey);
@@ -1808,6 +1804,28 @@
         height: 95vh;
     }
 }
+
+/* ------------------------------ *\
+    Projects-Presale-2
+\* ------------------------------ */
+
+/* ------- ad-section ------- */
+.projects-presale-2 #ad-section-1{
+    background-image: url('../images/projects/presale/2/section-1/poster-1-1920.png');
+}
+@media screen and (max-width: 1199.98px) {
+    .projects-presale-2 #ad-section-1{
+        background-image: url('../images/projects/presale/2/section-1/poster-1-1024.png');
+        background-position: bottom;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .projects-presale-2 #ad-section-1{
+        background-image: url('../images/projects/presale/2/section-1/poster-1-720.png');
+        background-position: center bottom;
+    }
+}
+
 
 /* ------------------------------ *\
     Contact
