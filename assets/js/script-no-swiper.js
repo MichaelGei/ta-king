@@ -1,20 +1,3 @@
-// Google tag (gtag.js)
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-DPDDNYMBW1');
-
-
-// to Highlight Current Page's nav-link
-const eachNavLink = document.querySelectorAll('.nav-link').forEach(link => {
-    if(link.href === window.location.href){
-        link.setAttribute('aria-current', 'page')
-    }
-})
-
-
-
 // Navbar Scrolled down Effect
 // console.log('Hello World')
 // const nav = document.querySelector('.navbar');
